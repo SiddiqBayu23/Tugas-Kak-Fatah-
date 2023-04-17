@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Belajar js kuy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="myForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName"><br><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName"><br><br>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select><br><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address"></textarea><br><br>
+
+    <label for="storageType">Storage Type:</label>
+    <select id="storageType" name="storageType">
+      <option value="session">Session Storage</option>
+      <option value="cookie">Cookie Storage</option>
+    </select><br><br>
+
+    <button type="button" onclick="saveData()">Save Data</button>
+  </form>
+
+  <button type="button" onclick="displayData()">Display Data</button>
+  <button type="button" onclick="deleteData()">Delete Data</button>
+
+  <div id="data"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
